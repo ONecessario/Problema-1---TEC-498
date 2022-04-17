@@ -1,0 +1,325 @@
+Analysis & Synthesis report for Problema1CD
+Sat Apr 16 20:28:04 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "somador_subtrator_complemto7b:comb_13"
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Apr 16 20:28:04 2022       ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; Problema1CD                                 ;
+; Top-level Entity Name       ; placar                                      ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 92                                          ;
+; Total pins                  ; 25                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; placar             ; Problema1CD        ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; bcd7segs.v                       ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/bcd7segs.v                      ;         ;
+; binario_bcd.v                    ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v                   ;         ;
+; somador_subtrator_complemto1b.v  ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto1b.v ;         ;
+; somador_subtrator_complemto7b.v  ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v ;         ;
+; comparador_bcd_8_bits.v          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/comparador_bcd_8_bits.v         ;         ;
+; comparador_bcd_24_bits.v         ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/comparador_bcd_24_bits.v        ;         ;
+; tristate.v                       ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/tristate.v                      ;         ;
+; placar.v                         ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v                        ;         ;
+; pontuar.v                        ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.1/Problema 1 CD/pontuar.v                       ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                    ;
++---------------------------------------------+----------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                            ;
++---------------------------------------------+----------------------------------------------------------------------------------+
+; Total logic elements                        ; 92                                                                               ;
+;     -- Combinational with no register       ; 92                                                                               ;
+;     -- Register only                        ; 0                                                                                ;
+;     -- Combinational with a register        ; 0                                                                                ;
+;                                             ;                                                                                  ;
+; Logic element usage by number of LUT inputs ;                                                                                  ;
+;     -- 4 input functions                    ; 70                                                                               ;
+;     -- 3 input functions                    ; 15                                                                               ;
+;     -- 2 input functions                    ; 7                                                                                ;
+;     -- 1 input functions                    ; 0                                                                                ;
+;     -- 0 input functions                    ; 0                                                                                ;
+;                                             ;                                                                                  ;
+; Logic elements by mode                      ;                                                                                  ;
+;     -- normal mode                          ; 92                                                                               ;
+;     -- arithmetic mode                      ; 0                                                                                ;
+;     -- qfbk mode                            ; 0                                                                                ;
+;     -- register cascade mode                ; 0                                                                                ;
+;     -- synchronous clear/load mode          ; 0                                                                                ;
+;     -- asynchronous clear/load mode         ; 0                                                                                ;
+;                                             ;                                                                                  ;
+; Total registers                             ; 0                                                                                ;
+; I/O pins                                    ; 25                                                                               ;
+; Maximum fan-out node                        ; somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_6|or0~2 ;
+; Maximum fan-out                             ; 20                                                                               ;
+; Total fan-out                               ; 349                                                                              ;
+; Average fan-out                             ; 2.98                                                                             ;
++---------------------------------------------+----------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                   ;
++----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------------------+--------------+
+; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                ; Entity Name                   ; Library Name ;
++----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------------------+--------------+
+; |placar                                      ; 92 (0)      ; 0            ; 0          ; 25   ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar                                                                            ; placar                        ; work         ;
+;    |binario_bcd:comb_14|                     ; 36 (36)     ; 0            ; 0          ; 0    ; 0            ; 36 (36)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|binario_bcd:comb_14                                                        ; binario_bcd                   ; work         ;
+;    |comparador_bcd_24_bits:comb_27|          ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|comparador_bcd_24_bits:comb_27                                             ; comparador_bcd_24_bits        ; work         ;
+;    |pontuar:comb_12|                         ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|pontuar:comb_12                                                            ; pontuar                       ; work         ;
+;    |somador_subtrator_complemto7b:comb_13|   ; 14 (0)      ; 0            ; 0          ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13                                      ; somador_subtrator_complemto7b ; work         ;
+;       |somador_subtrator_complemto1b:comb_3| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_3 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_4| ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_4 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_5| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_5 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_6| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_6 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_7| ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_7 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_8| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_8 ; somador_subtrator_complemto1b ; work         ;
+;       |somador_subtrator_complemto1b:comb_9| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_9 ; somador_subtrator_complemto1b ; work         ;
+;    |tristate:comb_30|                        ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_30                                                           ; tristate                      ; work         ;
+;    |tristate:comb_31|                        ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_31                                                           ; tristate                      ; work         ;
+;    |tristate:comb_32|                        ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_32                                                           ; tristate                      ; work         ;
+;    |tristate:comb_33|                        ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_33                                                           ; tristate                      ; work         ;
+;    |tristate:comb_34|                        ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_34                                                           ; tristate                      ; work         ;
+;    |tristate:comb_35|                        ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_35                                                           ; tristate                      ; work         ;
+;    |tristate:comb_36|                        ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placar|tristate:comb_36                                                           ; tristate                      ; work         ;
++----------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "somador_subtrator_complemto7b:comb_13"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Apr 16 20:27:46 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema1CD -c Problema1CD
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file bcd7segs.v
+    Info (12023): Found entity 1: bcd7segs File: C:/intelFPGA_lite/18.1/Problema 1 CD/bcd7segs.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at binario_bcd.v(38): ignored dangling comma in List of Port Connections File: C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file binario_bcd.v
+    Info (12023): Found entity 1: binario_bcd File: C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file somador_subtrator_complemto1b.v
+    Info (12023): Found entity 1: somador_subtrator_complemto1b File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto1b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file somador_subtrator_complemto7b.v
+    Info (12023): Found entity 1: somador_subtrator_complemto7b File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_bcd_8_bits.v
+    Info (12023): Found entity 1: comparador_bcd_8_bits File: C:/intelFPGA_lite/18.1/Problema 1 CD/comparador_bcd_8_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_bcd_24_bits.v
+    Info (12023): Found entity 1: comparador_bcd_24_bits File: C:/intelFPGA_lite/18.1/Problema 1 CD/comparador_bcd_24_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tristate.v
+    Info (12023): Found entity 1: tristate File: C:/intelFPGA_lite/18.1/Problema 1 CD/tristate.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file placar.v
+    Info (12023): Found entity 1: placar File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pontuar.v
+    Info (12023): Found entity 1: pontuar File: C:/intelFPGA_lite/18.1/Problema 1 CD/pontuar.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at pontuar.v(7): created implicit net for "inv0" File: C:/intelFPGA_lite/18.1/Problema 1 CD/pontuar.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at pontuar.v(8): created implicit net for "inv1" File: C:/intelFPGA_lite/18.1/Problema 1 CD/pontuar.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at pontuar.v(9): created implicit net for "inv2" File: C:/intelFPGA_lite/18.1/Problema 1 CD/pontuar.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(11): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(12): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(13): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(14): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(15): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(16): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at somador_subtrator_complemto7b.v(17): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(35): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 35
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(40): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 40
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(43): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 43
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(59): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 59
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(61): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 61
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(62): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 62
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(65): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 65
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(66): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 66
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(67): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 67
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(68): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 68
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(69): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 69
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(70): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 70
+Critical Warning (10846): Verilog HDL Instantiation warning at placar.v(71): instance has no name File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 71
+Info (12127): Elaborating entity "placar" for the top level hierarchy
+Info (12128): Elaborating entity "pontuar" for hierarchy "pontuar:comb_12" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 35
+Info (12128): Elaborating entity "somador_subtrator_complemto7b" for hierarchy "somador_subtrator_complemto7b:comb_13" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 40
+Info (12128): Elaborating entity "somador_subtrator_complemto1b" for hierarchy "somador_subtrator_complemto7b:comb_13|somador_subtrator_complemto1b:comb_3" File: C:/intelFPGA_lite/18.1/Problema 1 CD/somador_subtrator_complemto7b.v Line: 11
+Info (12128): Elaborating entity "binario_bcd" for hierarchy "binario_bcd:comb_14" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 43
+Warning (10034): Output port "s0" at binario_bcd.v(3) has no driver File: C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v Line: 3
+Warning (10034): Output port "s1" at binario_bcd.v(3) has no driver File: C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v Line: 3
+Warning (10034): Output port "s2" at binario_bcd.v(3) has no driver File: C:/intelFPGA_lite/18.1/Problema 1 CD/binario_bcd.v Line: 3
+Info (12128): Elaborating entity "comparador_bcd_24_bits" for hierarchy "comparador_bcd_24_bits:comb_27" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 59
+Info (12128): Elaborating entity "comparador_bcd_8_bits" for hierarchy "comparador_bcd_24_bits:comb_27|comparador_bcd_8_bits:centena" File: C:/intelFPGA_lite/18.1/Problema 1 CD/comparador_bcd_24_bits.v Line: 19
+Info (12128): Elaborating entity "bcd7segs" for hierarchy "bcd7segs:comb_28" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 61
+Info (12128): Elaborating entity "tristate" for hierarchy "tristate:comb_30" File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 65
+Info (13014): Ignored 14 buffer(s)
+    Info (13019): Ignored 14 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "desl[1]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 14
+    Warning (13410): Pin "desl[0]" is stuck at VCC File: C:/intelFPGA_lite/18.1/Problema 1 CD/placar.v Line: 14
+Info (21057): Implemented 117 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 92 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Sat Apr 16 20:28:04 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
+
+

@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/Problema-1---TEC-498-main/Problema 1 CD/simulation/qsim
+vcomparador_bcd_24_bits
+Z1 !s110 1649875172
+!i10b 1
+!s100 95Y]DJ7mTnG`emLaUB^3B3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3]4GQ:P6=^zARhF91JA4e0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649875171
+Z4 8Problema1CD.vo
+Z5 FProblema1CD.vo
+!i122 24
+L0 32 2645
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1649875171.000000
+Z7 !s107 Problema1CD.vo|
+Z8 !s90 -work|work|Problema1CD.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vcomparador_bcd_24_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 =2gdXl@U5E_z64Z<m>Z5g1
+R2
+Iob=]2EoXS`OF@0[7oGb=m2
+R3
+R0
+w1649875170
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 25
+L0 30 140
+R6
+r1
+!s85 0
+31
+!s108 1649875172.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R9
+R10
+vplacar
+Z11 !s110 1650151566
+!i10b 1
+!s100 =`S:H:flied0T5BMAEJ1e1
+IMVP;O5@EFRlU?YH3KBgc?2
+R3
+Z12 dC:/intelFPGA_lite/18.1/Problema 1 CD/simulation/qsim
+w1650151564
+R4
+R5
+L0 31
+Z13 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z14 !s108 1650151566.000000
+R7
+R8
+!i113 1
+R9
+R10
+vplacar_vlg_vec_tst
+R11
+!i10b 1
+!s100 YTCAkGO@2f?glM5BJL[[X1
+I=TJ4=Ml>nBX:ZP7@V<F3g0
+R3
+R12
+w1650151562
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R13
+r1
+!s85 0
+31
+R14
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10

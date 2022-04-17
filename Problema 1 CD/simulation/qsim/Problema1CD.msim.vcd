@@ -1,0 +1,280 @@
+$comment
+	File created using the following command:
+		vcd file Problema1CD.msim.vcd -direction
+$end
+$date
+	Sat Apr 16 20:26:06 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module placar_vlg_vec_tst $end
+$var reg 3 ! btn [0:2] $end
+$var reg 1 " ch $end
+$var reg 7 # chave [0:6] $end
+$var reg 1 $ clk $end
+$var reg 1 % sinal $end
+$var wire 1 & alerta $end
+$var wire 1 ' desl [0] $end
+$var wire 1 ( desl [1] $end
+$var wire 1 ) saida [0] $end
+$var wire 1 * saida [1] $end
+$var wire 1 + saida [2] $end
+$var wire 1 , saida [3] $end
+$var wire 1 - saida [4] $end
+$var wire 1 . saida [5] $end
+$var wire 1 / saida [6] $end
+$var wire 1 0 sclk [0] $end
+$var wire 1 1 sclk [1] $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var tri1 1 5 devclrn $end
+$var tri1 1 6 devpor $end
+$var tri1 1 7 devoe $end
+$var wire 1 8 sinal~combout $end
+$var wire 1 9 comb_13|comb_5|or1~0_combout $end
+$var wire 1 : comb_13|comb_6|or1~0_combout $end
+$var wire 1 ; comb_13|comb_7|or1~0_combout $end
+$var wire 1 < comb_12|or1~0_combout $end
+$var wire 1 = comb_12|or0~0_combout $end
+$var wire 1 > comb_13|comb_4|or1~0_combout $end
+$var wire 1 ? comb_13|comb_4|or1~1_combout $end
+$var wire 1 @ comb_13|comb_7|or1~1_combout $end
+$var wire 1 A comb_13|comb_9|or0~0_combout $end
+$var wire 1 B comb_13|comb_6|or0~2_combout $end
+$var wire 1 C comb_13|comb_5|or0~0_combout $end
+$var wire 1 D comb_14|or2~0_combout $end
+$var wire 1 E comb_13|comb_8|or0~0_combout $end
+$var wire 1 F comb_13|comb_7|or0~0_combout $end
+$var wire 1 G comb_14|or2~1_combout $end
+$var wire 1 H comb_14|or2~2_combout $end
+$var wire 1 I comb_14|or1~0_combout $end
+$var wire 1 J clk~combout $end
+$var wire 1 K comb_36|or0~2_combout $end
+$var wire 1 L comb_13|comb_3|or1~0_combout $end
+$var wire 1 M comb_13|comb_4|or0~0_combout $end
+$var wire 1 N comb_14|or6~1_combout $end
+$var wire 1 O comb_14|or6~2_combout $end
+$var wire 1 P comb_14|or6~0_combout $end
+$var wire 1 Q comb_14|or6~4_combout $end
+$var wire 1 R comb_14|or6~3_combout $end
+$var wire 1 S comb_14|or6~5_combout $end
+$var wire 1 T comb_14|or4~1_combout $end
+$var wire 1 U comb_14|or4~2_combout $end
+$var wire 1 V comb_14|or4~0_combout $end
+$var wire 1 W comb_14|or4~3_combout $end
+$var wire 1 X comb_35|or0~2_combout $end
+$var wire 1 Y comb_13|comb_3|or0~0_combout $end
+$var wire 1 Z comb_14|or3~3_combout $end
+$var wire 1 [ comb_14|or3~2_combout $end
+$var wire 1 \ comb_14|or5~9_combout $end
+$var wire 1 ] comb_14|or5~12_combout $end
+$var wire 1 ^ comb_14|or5~13_combout $end
+$var wire 1 _ comb_14|or5~8_combout $end
+$var wire 1 ` comb_14|or5~7_combout $end
+$var wire 1 a comb_14|or5~10_combout $end
+$var wire 1 b comb_14|or5~4_combout $end
+$var wire 1 c comb_14|or5~5_combout $end
+$var wire 1 d comb_14|or5~6_combout $end
+$var wire 1 e comb_14|or5~11_combout $end
+$var wire 1 f comb_30|or0~1_combout $end
+$var wire 1 g comb_36|or0~3_combout $end
+$var wire 1 h comb_14|or3~6_combout $end
+$var wire 1 i comb_14|or3~5_combout $end
+$var wire 1 j comb_14|or3~8_combout $end
+$var wire 1 k comb_14|or3~4_combout $end
+$var wire 1 l comb_14|or3~10_combout $end
+$var wire 1 m comb_14|or3~7_combout $end
+$var wire 1 n comb_14|or3~9_combout $end
+$var wire 1 o comb_14|or1~1_combout $end
+$var wire 1 p comb_14|or8~combout $end
+$var wire 1 q comb_33|or0~0_combout $end
+$var wire 1 r comb_36|or0~0_combout $end
+$var wire 1 s comb_30|or0~0_combout $end
+$var wire 1 t comb_36|or0~1_combout $end
+$var wire 1 u comb_36|or0~4_combout $end
+$var wire 1 v comb_35|or0~3_combout $end
+$var wire 1 w comb_35|or0~4_combout $end
+$var wire 1 x comb_35|or0~5_combout $end
+$var wire 1 y comb_36|or0~5_combout $end
+$var wire 1 z comb_34|or0~1_combout $end
+$var wire 1 { comb_35|or0~6_combout $end
+$var wire 1 | comb_34|or0~2_combout $end
+$var wire 1 } comb_34|or0~0_combout $end
+$var wire 1 ~ comb_34|or0~3_combout $end
+$var wire 1 !! comb_33|or0~2_combout $end
+$var wire 1 "! comb_33|or0~3_combout $end
+$var wire 1 #! comb_33|or0~1_combout $end
+$var wire 1 $! comb_33|or0~4_combout $end
+$var wire 1 %! comb_32|or0~4_combout $end
+$var wire 1 &! comb_32|or0~2_combout $end
+$var wire 1 '! comb_32|or0~3_combout $end
+$var wire 1 (! comb_31|or0~3_combout $end
+$var wire 1 )! comb_31|or0~4_combout $end
+$var wire 1 *! comb_31|or0~6_combout $end
+$var wire 1 +! comb_31|or0~2_combout $end
+$var wire 1 ,! comb_31|or0~5_combout $end
+$var wire 1 -! comb_30|or0~3_combout $end
+$var wire 1 .! comb_30|or0~2_combout $end
+$var wire 1 /! comb_30|or0~4_combout $end
+$var wire 1 0! comb_30|or0~5_combout $end
+$var wire 1 1! ch~combout $end
+$var wire 1 2! comb_27|or0~3_combout $end
+$var wire 1 3! comb_27|or0~4_combout $end
+$var wire 1 4! comb_14|or4~4_combout $end
+$var wire 1 5! comb_27|or0~2_combout $end
+$var wire 1 6! comb_27|or0~0_combout $end
+$var wire 1 7! comb_27|or0~1_combout $end
+$var wire 1 8! comb_27|or0~5_combout $end
+$var wire 1 9! chave~combout [0] $end
+$var wire 1 :! chave~combout [1] $end
+$var wire 1 ;! chave~combout [2] $end
+$var wire 1 <! chave~combout [3] $end
+$var wire 1 =! chave~combout [4] $end
+$var wire 1 >! chave~combout [5] $end
+$var wire 1 ?! chave~combout [6] $end
+$var wire 1 @! btn~combout [0] $end
+$var wire 1 A! btn~combout [1] $end
+$var wire 1 B! btn~combout [2] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 !
+1"
+b10011 #
+1$
+0%
+0&
+1(
+1'
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+01
+10
+02
+13
+x4
+15
+16
+17
+08
+19
+0:
+0;
+1<
+0=
+0>
+1?
+0@
+1A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+1I
+1J
+0K
+0L
+1M
+0N
+0O
+1P
+0Q
+0R
+0S
+1T
+1U
+1V
+1W
+1X
+0Y
+1Z
+0[
+1\
+0]
+0^
+0_
+1`
+1a
+1b
+0c
+0d
+0e
+0f
+1g
+0h
+0i
+0j
+1k
+1l
+1m
+1n
+1o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+1|
+0}
+0~
+1!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+1*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+11!
+12!
+03!
+14!
+05!
+06!
+07!
+08!
+1?!
+1>!
+0=!
+0<!
+1;!
+0:!
+09!
+1B!
+0A!
+1@!
+$end
+#1000000

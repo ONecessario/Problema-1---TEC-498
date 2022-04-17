@@ -20,14 +20,15 @@ module placar(btn, chave, sinal, saida, clk, sclk, alerta,ch, desl);
 	
 	//defini as 12 posições para o numero 99 em BCD
 	wire [0:11] noventaenove;
-	or or994(noventaenove[4], ch);
-	or or997(noventaenove[7], ch);
-	or or998(noventaenove[8], ch);
-	or or9911(noventaenove[11], ch);
+	or or994(noventaenove[0], ch);
+	or or997(noventaenove[3], ch);
+	or or998(noventaenove[4], ch);
+	or or9911(noventaenove[7], ch);
 	//fio para saida do circuito do botão
 	wire[0:6] pontos;
 	wire invs;
 	not notsinal(invs, sinal);
+	wire [0:11] comp; 
 	
 	
 	// Valor do botão clicado é definido
@@ -41,7 +42,21 @@ module placar(btn, chave, sinal, saida, clk, sclk, alerta,ch, desl);
 	// saida na ordem normal
 	binario_bcd(s[6], s[5], s[4], s[3], s[2], s[1], s[0], T[0], T[1], T[2], T[3], T[4], T[5], T[6], T[7], T[8], T[9], T[10], T[11]);
 	// compara se A>B e retorna nivel logico alto
-	comparador_bcd_24_bits(T,noventaenove, alerta);
+	
+	//invertendo valores para passar como entrada do comparador bcd que verifica se A>B com A sendo o bcd do resultado da soma e B sendo 99 em bcd
+	or ort0(comp[11], T[0]);
+	or ort1(comp[10], T[1]);
+	or ort2(comp[9], T[2]);
+	or ort3(comp[8], T[3]);
+	or ort4(comp[7], T[4]);
+	or ort5(comp[6], T[5]);
+	or ort6(comp[5], T[6]);
+	or ort7(comp[4], T[7]);
+	or ort8(comp[3], T[8]);
+	or ort9(comp[2], T[9]);
+	or ort10(comp[1], T[10]);
+	or ort11(comp[0], T[11]);
+	comparador_bcd_24_bits(comp,noventaenove, alerta);
 	// entradas e saidas das casas de unidade e dezena do bcd que são convertidas para saidas em 7 segmentos
 	bcd7segs (T[4], T[5], T[6], T[7], set[6], set[5], set[4], set[3], set[2], set[1], set[0]);
 	bcd7segs (T[8], T[9], T[10], T[11], set[13], set[12], set[11], set[10], set[9], set[8], set[7]);

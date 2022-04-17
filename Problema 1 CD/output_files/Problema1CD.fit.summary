@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Apr 16 20:28:07 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Problema1CD
+Top-level Entity Name : placar
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 92 / 240 ( 38 % )
+Total pins : 25 / 80 ( 31 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
